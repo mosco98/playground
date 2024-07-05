@@ -4,6 +4,7 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 const SessionsPage = () => {
@@ -368,15 +369,16 @@ const SessionsPage = () => {
                           </AnimatePresence>
                         </div>
 
-                        <img
-                          width={"590px"}
-                          height={"800px"}
+                        <Image
+                          width={590}
+                          height={800}
                           className={cn(
                             "object-cover max-w-none transition-all duration-200 ease-in-out w-[590px] h-[800px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 overflow-hidden grayscale-0",
                             active === i && "grayscale-0"
                           )}
                           src={slide.img}
                           alt=""
+                          priority
                         />
                       </div>
                     </motion.li>
