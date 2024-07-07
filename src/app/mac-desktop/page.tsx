@@ -99,6 +99,7 @@ const MacDesktopPage = () => {
         src={"/mac/Sonoma-wallpaper.png"}
         fill
         alt=""
+        priority
       />
 
       <StageManager />
