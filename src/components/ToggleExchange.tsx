@@ -9,23 +9,6 @@ const ToggleExchange = () => {
 
   const headerPb = 16;
 
-  const totalBalanceVariants = {
-    big: {
-      x: "-50%",
-      left: "50%",
-      top: "47%",
-      // fontSize: "36px",
-      paddingRight: 14
-    },
-    small: {
-      x: "0%",
-      right: "0%",
-      top: "31%",
-      // fontSize: "18px",
-      paddingRight: 14
-    }
-  };
-
   return (
     <div className="w-[320px]">
       <div
