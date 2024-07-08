@@ -77,8 +77,56 @@ const StageCard = ({ onOpen }: StageCardProps) => {
       }}
       ref={ref}
     >
-      <div className="bg-[#0D0D0D] p-2.5 text-xs font-medium text-white/70">
-        about.txt
+      <div className="bg-[#0D0D0D] p-2.5 text-xs font-medium text-white/70 flex items-center gap-6">
+        <div className="flex items-center gap-2">
+          <span
+            className="w-2.5 aspect-square bg-red-500 rounded-full
+            flex items-center justify-center
+          "
+            onClick={() => setIsOpen(false)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-1.5 h-1.5 flex-shrink-0 stroke-[2px]"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z" />
+            </svg>
+          </span>
+
+          <span
+            className="w-2.5 aspect-square bg-yellow-500 rounded-full
+            flex items-center justify-center
+          "
+            onClick={() => setIsOpen(false)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-1.5 h-1.5 flex-shrink-0 stroke-[2px]"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z" />
+            </svg>
+          </span>
+
+          <span
+            className="w-2.5 aspect-square bg-green-500 rounded-full
+            flex items-center justify-center
+          "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-1.5 h-1.5 flex-shrink-0 stroke-[2px] rotate-[135deg]"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path d="M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z" />
+            </svg>
+          </span>
+        </div>
+        <p>about.txt</p>
       </div>
 
       <motion.div
