@@ -39,8 +39,8 @@ const StageCard = ({ onOpen }: StageCardProps) => {
       opacity: 0.8,
       width: "160px",
       height: "100px",
-      x: "0%",
-      transition: { delay: 0.4, duration: 0.4, ease: "easeInOut" }
+      x: "0%"
+      // transition: { delay: 0.4, duration: 0.4, ease: "easeInOut" }
     },
     big: {
       rotateY: "0deg",
@@ -141,14 +141,14 @@ const StageCard = ({ onOpen }: StageCardProps) => {
           alt="me"
         />
 
-        <AnimatePresence mode="wait">
+        <AnimatePresence initial={true} mode="wait">
           {isOpen && (
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.4 } }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
-              className="mt-4"
+              initial={{ y: -100 }}
+              animate={{ y: 0 }}
+              exit={{ y: -100 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="mt-4 overflow-hidden relative"
             >
               <h1 className="text-xl font-semibold font-satoshi text-white">
                 <WavingHand /> Hi there! I&apos;m Moses.
@@ -170,7 +170,7 @@ const StageCard = ({ onOpen }: StageCardProps) => {
 
               <p className="mt-2 tracking-normal text-sm">
                 Move your cursor to the bottom of the page to see my Skills and
-                tools 😉
+                tools.
               </p>
             </motion.div>
           )}

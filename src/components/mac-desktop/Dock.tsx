@@ -48,7 +48,7 @@ const Dock = () => {
           onMouseOver={() => setIsMouseOver(true)}
           onMouseLeave={() => setIsMouseOver(false)}
         >
-          <div className="bg-black/5 backdrop-blur-md rounded-2xl px-3 pt-2 pb-3 flex items-center justify-between gap-4 border border-white/20">
+          <div className="bg-white/5 backdrop-blur-md rounded-2xl px-3 pt-2 pb-3 flex items-center justify-between gap-4 border border-white/20">
             {/* <div className="h-12 aspect-square">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
