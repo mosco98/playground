@@ -17,7 +17,11 @@ const config = {
         "2xl": "1400px"
       }
     },
-    extend: {}
+    extend: {
+      fontFamily: {
+        geist: [`var(--font-geist)`]
+      }
+    }
   },
   plugins: [require("tailwindcss-animate")]
 } satisfies Config;
