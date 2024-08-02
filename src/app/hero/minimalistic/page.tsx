@@ -36,7 +36,7 @@ const MinimalisticHeroPage = () => {
   useEffect(() => {
     setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % TEXTS.length);
-    }, 2000);
+    }, 2500);
 
     // return () => clearInterval(interval);
   }, []);
@@ -48,7 +48,7 @@ const MinimalisticHeroPage = () => {
         x: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 80,
+          duration: 90,
           ease: "linear"
         }
       }
@@ -56,7 +56,11 @@ const MinimalisticHeroPage = () => {
   };
 
   return (
-    <section className="pt-52">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="pt-52"
+    >
       <div className="text-center text-[96px] font-semibold tracking-tight leading-[110px]">
         <h1 className="relative z-20 text-white/60">Making your brand</h1>
         <div className="relative h-28 flex items-center justify-center overflow-hidden">
@@ -70,14 +74,15 @@ const MinimalisticHeroPage = () => {
                       opacity: 0
                     }}
                     animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: i === 0 ? 60 : -60, opacity: 0 }}
+                    exit={{
+                      y: i === 0 ? 60 : -60,
+                      opacity: 0
+                    }}
                     key={text}
                     className="absolute text-white/65"
                     transition={{
-                      duration: 0.7,
-                      type: "spring",
-                      bounce: 0.15,
-                      opacity: { duration: 0.15 }
+                      duration: 0.35,
+                      ease: [0.42, 0, 0.58, 1]
                     }}
                     style={{ zIndex: i === 0 ? 20 : 10 }}
                   >
@@ -130,7 +135,7 @@ const MinimalisticHeroPage = () => {
           ))}
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
