@@ -337,3 +337,68 @@ body.single-toggle .drop:nth-child(10) {
     transform: rotate(360deg);
   }
 }
+
+.sound-stroke {
+  -webkit-animation: animation 1.5s linear infinite !important;
+  animation: animation 1.5s linear infinite;
+
+  &.stop {
+    animation: none !important;
+    height: 30%;
+  }
+
+  &:nth-child(1) {
+    -webkit-animation-delay: 0.3s !important;
+    animation-delay: 0s !important;
+  }
+
+  &:nth-child(2) {
+    -webkit-animation-delay: 0.3s !important;
+    animation-delay: 0.3s !important;
+  }
+
+  &:nth-child(3) {
+    -webkit-animation-delay: 0.6s !important;
+    animation-delay: 0.6s !important;
+  }
+
+  &:nth-child(4) {
+    -webkit-animation-delay: 0.9s !important;
+    animation-delay: 0.9s !important;
+  }
+
+  &:nth-child(5) {
+    -webkit-animation-delay: 0.3s !important;
+    animation-delay: 0.3s !important;
+  }
+
+  &:nth-child(6) {
+    -webkit-animation-delay: 0.6s !important;
+    animation-delay: 0.6s !important;
+  }
+
+  &:nth-child(7) {
+    -webkit-animation-delay: 0.9s !important;
+    animation-delay: 0.9s !important;
+  }
+}
+
+@-webkit-keyframes animation {
+  50% {
+    height: 20%;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
+.masked-card {
+  /* backdrop-filter: blur(4px);
+  mask: linear-gradient(
+    to bottom,
+
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0.5) 30%
+  ); */
+}
