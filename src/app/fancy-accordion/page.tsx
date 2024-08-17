@@ -54,7 +54,7 @@ const FancyCarousel = () => {
     <div className="min-h-screen w-screen grid place-items-center bg-white px-5">
       <div className="md:w-[500px] w-full">
         <h1 className="text-center mb-14 text-4xl text-[#0D0D0D] font-semibold tracking-tight">
-          FAQ
+          FAQs
         </h1>
 
         <div className="px-6 text-sm mb-3">
