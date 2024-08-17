@@ -402,3 +402,59 @@ body.single-toggle .drop:nth-child(10) {
     rgba(255, 255, 255, 0.5) 30%
   ); */
 }
+
+.radial-blur {
+  /* background: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.2)); */
+  filter: blur(80px);
+
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+}
+
+/* .progress {
+  mask-image: linear-gradient(red, white);
+} */
+
+.message {
+  position: relative;
+
+  &:hover {
+    &::before {
+      @apply bg-blue-50;
+    }
+  }
+
+  &.active {
+    &::before {
+      @apply bg-blue-50;
+    }
+  }
+}
+
+.message:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -7px;
+  height: 20px;
+  width: 20px;
+  @apply bg-gray-100;
+  border-bottom-right-radius: 15px;
+}
+.message:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -10px;
+  width: 10px;
+  height: 20px;
+  background: white;
+  border-bottom-right-radius: 10px;
+}

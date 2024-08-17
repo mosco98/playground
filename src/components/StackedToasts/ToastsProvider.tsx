@@ -57,13 +57,13 @@ export const ToastsProvider = ({ children }: ToastsProviderProps) => {
 
   const toast = (newToast: ToastType) => {
     setToasts((prevToasts) => {
-      let newToasts: any = [...prevToasts];
+      // let newToasts: any = [...prevToasts];
 
-      if (prevToasts.length === 3) {
-        newToasts = prevToasts.slice(1);
-      }
+      // if (prevToasts.length === 3) {
+      //   newToasts = prevToasts.slice(1);
+      // }
 
-      return [...newToasts, newToast];
+      return [...prevToasts, newToast];
     });
   };
 
