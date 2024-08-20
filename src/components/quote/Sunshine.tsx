@@ -8,7 +8,7 @@ interface SunshineProps {
 
 const Sunshine = ({ className }: SunshineProps) => {
   return (
-    <div className={cn("sun", className)}>
+    <div className={cn("", className)}>
       <div className="ray_box">
         <div className="ray ray1" />
         <div className="ray ray2" />
