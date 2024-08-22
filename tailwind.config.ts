@@ -19,7 +19,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        geist: [`var(--font-geist)`]
+        geist: [`var(--font-geist)`],
+        ibm: [`var(--font-ibm)`]
       }
     }
   },

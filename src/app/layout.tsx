@@ -1,4 +1,4 @@
-import { geist } from "@/lib/font";
+import { geist, ibm } from "@/lib/font";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -18,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, geist.variable)}>{children}</body>
+      <body className={cn(inter.className, geist.variable, ibm.variable)}>
+        {children}
+      </body>
     </html>
   );
 }

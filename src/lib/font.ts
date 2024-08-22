@@ -1,3 +1,4 @@
+import { IBM_Plex_Mono } from "next/font/google";
 import localFont from "next/font/local";
 
 export const geist = localFont({
@@ -14,4 +15,10 @@ export const geist = localFont({
       style: "normal"
     }
   ]
+});
+
+export const ibm = IBM_Plex_Mono({
+  variable: "--font-ibm",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"]
 });
