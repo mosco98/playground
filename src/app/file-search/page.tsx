@@ -521,13 +521,16 @@ const File = ({
 
             <div
               className={cn(
-                `flex-1 flex items-center justify-center [&_svg]:w-32 [&_svg]:h-32 [&_svg]:mt-5 [&_svg]:transition-all [&_svg]:duration-500 [&_svg]:ease-in-out`,
-                selected && "[&_svg]:w-[180px] [&_svg]:h-[180px]"
+                `flex-1 flex items-center justify-center [&_svg]:w-32 [&_svg]:h-32 pt-5 [&_svg]:transition-all [&_svg]:duration-500 [&_svg]:delay-0 [&_svg]:ease-in-out transition-all duration-500 ease-in-out`,
+                selected &&
+                  "[&_svg]:w-[180px] [&_svg]:h-[180px] pt-0 [&_svg]:delay-1000"
               )}
               style={{ color: id }}
             >
               {icon}
             </div>
+
+            {/* <div className="h-50 w-full bg-red-400"></div> */}
 
             <div className="flex-shrink-0 flex items-end justify-center pb-4 text-left w-full">
               <div className="w-full">
