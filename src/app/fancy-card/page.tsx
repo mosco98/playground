@@ -55,9 +55,9 @@ const Card = ({
         animate={{
           y: !isHovered ? 40 : 0,
           opacity: !isHovered ? 0 : 1,
-          transition: { delay: isHovered ? 0.5 : 0 }
+          transition: { delay: isHovered ? 0.5 : 0, ease: "easeInOut" }
         }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
         className="text-4xl text-center mb-2.5"
       >
         {status === "unavailable" ? "😔" : "😄"}{" "}
@@ -99,7 +99,7 @@ const Card = ({
                 </div>
 
                 {status === "unavailable" ? (
-                  <p className="text-xs text-red-800">
+                  <p className="text-xs text-red-600">
                     Oops! This property is no longer available
                   </p>
                 ) : (
