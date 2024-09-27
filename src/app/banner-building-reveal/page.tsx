@@ -27,7 +27,8 @@ const BannerBuildingRevealPage = () => {
           animate={"animate"}
           transition={{ duration: 1.5, ease: "easeInOut", delay: 0.2 }}
           style={{
-            offsetPath: "path('M -700 0 Q 0 225 0 0')",
+            offsetPath:
+              "path('M-334 507C-21 390 0 281 20 225 37 100 23 49 0 0')",
             offsetRotate: "0deg",
             offsetAnchor: "left top",
             zIndex: 100
@@ -86,7 +87,8 @@ const BannerBuildingRevealPage = () => {
           animate={"animate"}
           transition={{ duration: 1.5, ease: "easeInOut", delay: 0.2 }}
           style={{
-            offsetPath: "path('M 150 10 Q 0 250 0 0')",
+            offsetPath:
+              "path('M326 197C143 156 151 162 82 115 51 81 33 66 0 0')",
             offsetRotate: "0deg",
             offsetAnchor: "left top",
             zIndex: 100
